@@ -25,7 +25,7 @@ section#login {
     transform: translate(-50%, -50%); 
     background-color: white; 
     width: 280px; /* Aumentado levemente para acomodar melhor os elementos em telas de 320px */
-    height: 520px; 
+    height: 560px; 
     border-radius: 20px; 
     overflow: hidden; 
 } 
@@ -83,6 +83,29 @@ div#formulario > p {
     display: none; /* Como você já usa placeholders e ícones, ocultar a label visualmente melhora o espaço em telas pequenas */
 }
 
+/* Corrigido: Removido o espaço e o 'f' extra de font-family */
 .material-icons { 
-    font-family: 'Material Icons' !important; /* Corrigido de font-f family */
+    font-family: 'Material Icons' !important; 
+}
+
+/* Agora o navegador conseguirá ler e aplicar estas regras normalmente */
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    background-color: #5f2c82;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: #9804fa;
+}
+
+form a:hover{
+    text-decoration: none;
+    background-color: #aa83c4
 }
